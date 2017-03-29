@@ -1,21 +1,21 @@
-/* Mise en page générale */
-/* --------------------- */
+/* Mise en page générale ---------------------------  */
+/* -------------------------------------------------- */
 
 
 /*     code couleur        */
-/*  Gris marronné 89,79,79 */
+/* Gris marronné 89,79,79  */
 /* bleu clair 170, 207, 221*/
 /* bleu pétant 99, 247, 255*/
 /* Gris clair 214, 214, 214*/
 
 
 
-* {
-  width: 90%;
-/*  border : 1px solid black;*/
+body {
+  width: 85%;
   margin: auto;
   font-family : arial, sans-serif;
   text-align: center;
+  /*  border : 1px solid black;*/
 }
 
 a {
@@ -28,8 +28,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Mise en page header */
-/* ------------------- */
+/* Mise en page header -------------------------------------- */
+/* ---------------------------------------------------------- */
 
 h1, header section {
   display: inline-block;
@@ -59,7 +59,7 @@ h1:hover {
 
 form a:hover {
   text-decoration: none;
-} /* pour régler petit soucis de "soulignage"*/ 
+} /* pour régler petit soucis de "soulignage"*/
 
 header section {
   width: 38%;
@@ -74,14 +74,46 @@ header i {
   width: 3em;
 }
 
-
-
 section div {
   margin: 1em;
 }
 
-/* Mise en page footer */
-/* ------------------- */
+
+/* Mise en page nav --------------------------------------  */
+/* -------------------------------------------------------- */
+
+nav {
+  border-bottom: 0.5em solid rgb(99, 247, 255);
+  padding: 0px;
+  margin: auto;
+  color: rgb(89,79,79);
+}
+
+nav ul {
+  width: auto;
+  margin: 0px;
+  padding : 0px;
+}
+
+nav li {
+  margin: 0px;
+  display: inline-block;
+  width: 24.2%;
+  height: 2em;
+  padding: 1em 0em 0.6em 0em;
+  text-align: center;
+}
+
+nav li:hover {
+  background: rgb(89,79,79);
+  border-left: 0.5em solid rgb(99, 247, 255);
+  border-right: 0.5em solid rgb(99, 247, 255);
+}
+
+
+
+/* Mise en page footer----------------------------------------------- */
+/* ------------------------------------------------------------------ */
 
 footer {
   height: 7em;
