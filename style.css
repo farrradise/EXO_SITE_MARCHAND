@@ -166,7 +166,7 @@ main aside, main section {
 aside {
   border: 0.1px solid rgb(89,79,79);
   width: 25%;
-  top: 13.4em;
+  top: 11.75em;
   text-align: left;
   background: rgb(89,79,79);
   height: 27.5em;
@@ -230,7 +230,13 @@ main section {
 /* ------------------------------------------------------------------ */
 
 footer {
-  height: 5em;
+  height: 3em;
   margin: 0em auto 1em auto;
+  padding-top: 1.5em;
   border-top: 0.5em solid rgb(99, 247, 255);
+}
+
+footer section a {
+  width: 30%;
+  display: inline-block;
 }
