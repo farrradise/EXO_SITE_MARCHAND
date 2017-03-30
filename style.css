@@ -17,6 +17,7 @@ body {
   text-align: center;
   /*  border : 1px solid black;*/
   color: rgb(89,79,79);
+  position: relative;
 }
 
 a {
@@ -30,6 +31,17 @@ header, footer {
   color : rgb(99, 247, 255);
 }
 
+header, nav, #placement {
+  position: fixed;
+  width: 85%;
+  z-index: 2;
+}
+
+#placement {
+  background-color: white;
+  height: 2em;
+} /* ce bidouillage c'est pour ne voit pas la main section en haut (marge) lors du défilement*/
+
 
 /* Mise en page header -------------------------------------- */
 /* ---------------------------------------------------------- */
@@ -39,9 +51,10 @@ h1, header section {
 }
 
 header {
-  height: 12em;
+  height: 8em;
   margin: 2em auto 0em auto;
   border-bottom: 0.5em solid rgb(99, 247, 255);
+  margin : white;
 }
 
 h1 {
@@ -56,11 +69,9 @@ h1 {
 
 h1:hover {
   color: rgb(99, 247, 255);
+  text-shadow: 1px 1px 3px white;
 }
 
-form a:hover {
-  text-decoration: none;
-} /* pour régler petit soucis de "soulignage"*/
 
 header a:hover {
   text-decoration: underline;
@@ -90,8 +101,10 @@ section div {
 nav {
   border-bottom: 0.5em solid rgb(99, 247, 255);
   padding: 0px;
-  margin: auto auto Opx auto;
+  margin: 0em auto 0em auto;
   color: rgb(89,79,79);
+  top: 10.5em;
+  background-color: white;
 }
 
 nav ul {
@@ -132,6 +145,10 @@ nav li:hover {
 main {
 /*  border-right: 2em solid rgb(89,79,79);*/
 /* background-color: rgb(89,79,79);*/
+  position: relative;
+  top: 13.4em;
+  z-index: 1;
+
 }
 
 /* Mise en page Aside --------------------------------------  */
@@ -141,23 +158,25 @@ main {
 aside {
   border: 0.1px solid rgb(89,79,79);
   width: 25%;
-  height: auto;
+  height: 40em;
   text-align: left;
   background: rgb(89,79,79);
 }
 
 aside article {
+  vertical-align: middle;
   text-align: center;
   width: 100%;
-  height: 18em;
-  margin-top: 0px;
+  height: 17em;
+  margin-top: 1em;
   color: white;
-  padding-top: 1em;
+  padding: 1em 0 1em 0;
 }
 
 aside img {
-  width: 12em;
+  width: 12.5em;
 }
+
 aside article:hover {
   background: rgb(99, 247, 255);
   box-shadow: 2px 2px 4px rgb(89,79,79);
@@ -182,6 +201,6 @@ aside h3 {
 
 footer {
   height: 5em;
-  margin: 0em auto 1em auto;
+  margin: 13.4em auto 1em auto;
   border-top: 0.5em solid rgb(99, 247, 255);
 }
