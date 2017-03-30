@@ -137,6 +137,7 @@ nav li:hover {
   transform: scale(1);
 }
 
+
 /* Mise en page Main ------------------------------------------*/
 /* -------------------------------------------------------- */
 
@@ -153,14 +154,13 @@ main {
 
 main aside, main div {
   position: relative;
-  top: 13.5em;
   z-index: 1;
   height: 27.5em;
 }
 
 main div {
   width: 74%;
-  top : 9.6em;
+  top : 13.5em;
 }
 
 /* Mise en page Aside --------------------------------------  */
@@ -169,7 +169,7 @@ main div {
 
 aside {
   width: 25%;
-  top: 11.75em;
+  top: 11.8em;
   text-align: left;
   background: rgb(89,79,79);
 }
@@ -198,6 +198,7 @@ aside article:hover {
   box-shadow: 2px 2px 4px rgb(89,79,79);
   transform: scale(1.124);
   color: rgb(89,79,79);
+  transition: 0.5s;
 }
 
 aside p {
@@ -230,18 +231,17 @@ aside h3 {
 }
 
 #slideshow {
-	position: relative;
+	position: absolute;
 	width: 510px;
 	height: 350px;
-	margin:  auto auto;
+	margin:  auto 10em;
 	overflow: hidden;
-  top : 1em;
+  top : 3em;
 }
 
 #scontent {
 	position: absolute;
-	top: 0;
-	left: 0;
+	left: 0px;
 	width: 2000px;
 	margin: 0;
 	padding: 0;
@@ -255,14 +255,20 @@ aside h3 {
 
 @keyframes AutoSlide {
 	0%, 15%, 100% {
-		left: -300px; /*1ère image*/
+		left: -250px; /*1ère image*/
 	}
 	35%, 50% {
 		left: -800px; /*2ème image*/
 	}
 	70%, 85% {
-		left: -1200px; /*3ème image*/
+		left: -1300px; /*3ème image*/
 	}
+}
+
+#slideshow:hover {
+  box-shadow: 2px 3px 7px rgb(89,79,79);
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 /* Mise en page footer----------------------------------------------- */
