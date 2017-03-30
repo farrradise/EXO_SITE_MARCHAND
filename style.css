@@ -43,12 +43,13 @@ header, nav, #placement {
 } /* ce bidouillage c'est pour ne voit pas la main section en haut (marge) lors du défilement*/
 
 
+h1, header section, main aside, main section {
+  display: inline-block;
+}
+
 /* Mise en page header -------------------------------------- */
 /* ---------------------------------------------------------- */
 
-h1, header section {
-  display: inline-block;
-}
 
 header {
   height: 8em;
@@ -143,12 +144,16 @@ nav li:hover {
 /* -------------------------------------------------------- */
 
 main {
-/*  border-right: 2em solid rgb(89,79,79);*/
-/* background-color: rgb(89,79,79);*/
-  position: relative;
-  top: 13.4em;
-  z-index: 1;
+  border: 1px solid red;
+  padding: 0px;
+  height: 53.5em;
+  margin: auto;
+  }
 
+main aside, main section {
+  position: relative;
+  z-index: 1;
+  border: 1px solid black;
 }
 
 /* Mise en page Aside --------------------------------------  */
@@ -158,9 +163,10 @@ main {
 aside {
   border: 0.1px solid rgb(89,79,79);
   width: 25%;
-  height: 40em;
+  top: 13.4em;
   text-align: left;
   background: rgb(89,79,79);
+  height: 40em;
 }
 
 aside article {
@@ -185,22 +191,32 @@ aside article:hover {
 }
 
 aside p {
-  margin: auto;
+  margin: 1em auto auto auto;
   font-size: 0.9em;
   width: 13.5em;
   text-align: justify;
-  margin-top: 1em;
   font-weight: normal;
 }
 
 aside h3 {
   font-size: 1.5em;
 }
+
+/* Mise en page slide show de main section----------------------------------------------- */
+/* ------------------------------------------------------------------ */
+
+main section {
+  width: 74%;
+  height: 40em;
+  text-align: justify;
+  top: -24.5em;
+}
+
 /* Mise en page footer----------------------------------------------- */
 /* ------------------------------------------------------------------ */
 
 footer {
   height: 5em;
-  margin: 13.4em auto 1em auto;
+  margin: 0em auto 1em auto;
   border-top: 0.5em solid rgb(99, 247, 255);
 }
