@@ -41,13 +41,18 @@ header, nav, #placement {
 } /* ce bidouillage c'est pour ne voit pas la main section en haut (marge) lors du défilement*/
 
 
-h1, header section, main aside, main div, #qui iframe, #qui ul {
+h1, header section, main aside, main div, #qui iframe, #qui ul, #contact label, #contact input, #contact textarea {
   display: inline-block;
 }
 
 #scontent li, #qui li {
   list-style: none;
 }
+
+i {
+  padding: 0px 1em;
+}
+
 
 /* Mise en page header -------------------------------------- */
 /* ---------------------------------------------------------- */
@@ -227,6 +232,16 @@ aside h3 {
 /* Mise en page de main div----------------------------------------------- */
 /* ------------------------------------------------------------------ */
 
+main div section {
+  height: 25.5em;
+  padding: 0em 3em;
+  text-align: justify;
+}
+
+main div h2 {
+  text-shadow: 2px 2px 1px rgb(99, 247, 255);
+  text-align: left;
+}
 
 /* Mise en page slideshow -------------------------------------------*/
 /* ------------------------------------------------------------------ */
@@ -240,9 +255,10 @@ aside h3 {
 	position: absolute;
 	width: 510px;
 	height: 350px;
-	margin:  auto 10em;
+	margin:  auto;
 	overflow: hidden;
   top : 3em;
+  left : 6em;
 }
 
 #scontent {
@@ -261,13 +277,13 @@ aside h3 {
 
 @keyframes AutoSlide {
 	0%, 15%, 100% {
-		left: -250px; /*1ère image*/
+		left: 0px; /*1ère image*/
 	}
 	35%, 50% {
-		left: -800px; /*2ème image*/
+		left: -500px; /*2ème image*/
 	}
 	70%, 85% {
-		left: -1300px; /*3ème image*/
+		left: -1000px; /*3ème image*/
 	}
 }
 
@@ -280,16 +296,12 @@ aside h3 {
 /* Mise en page Qui sommes nous --------------------------------------*/
 /* ------------------------------------------------------------------ */
 
-#qui section {
-  height: 25.5em;
-  padding: 1em 3em;
-  text-align: justify;
-}
 
 #qui iframe {
-  border: 0.5em solid rgb(99, 247, 255);
+  border: 0.2em solid rgb(99, 247, 255);
   width: 14em;
   height: 100%;
+  box-shadow: 1px 1px 1px rgb(89,79,79);
 }
 
 #qui ul {
@@ -301,7 +313,37 @@ aside h3 {
   padding: 0.5em 0em;
 }
 
+#qui li:hover {
+  text-shadow: 1px 1px 1px rgb(89,79,79);
+}
 
+/* Mise en page contactez-nous----------------------------------------------- */
+/* ------------------------------------------------------------------ */
+
+#contact {
+  overflow-y: hidden;
+}
+
+#contact input {
+  margin: 2px 0px;
+  display: block;
+}
+
+#contact form {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+#contact input:last-of-type {
+  height: 4em;
+  width: auto;
+}
+
+#contact button {
+  position: absolute;
+  top: 27em;
+  right : 26em;
+}
 
 /* Mise en page footer----------------------------------------------- */
 /* ------------------------------------------------------------------ */
