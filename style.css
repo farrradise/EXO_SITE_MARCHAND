@@ -41,8 +41,12 @@ header, nav, #placement {
 } /* ce bidouillage c'est pour ne voit pas la main section en haut (marge) lors du défilement*/
 
 
-h1, header section, main aside, main div {
+h1, header section, main aside, main div, #qui iframe, #qui ul {
   display: inline-block;
+}
+
+#scontent li, #qui li {
+  list-style: none;
 }
 
 /* Mise en page header -------------------------------------- */
@@ -147,13 +151,14 @@ aside article, main, main aside, main section, aside p, main div {  border: 1px 
 
 
 main {
+  position: relative;
   padding: 0px;
   height: 41em;
   margin: auto auto 0px auto;
 }
 
 main aside, main div {
-  position: relative;
+  position: absolute;
   z-index: 1;
   height: 27.5em;
 }
@@ -161,6 +166,7 @@ main aside, main div {
 main div {
   width: 74%;
   top : 13.5em;
+  right : 0em;
 }
 
 /* Mise en page Aside --------------------------------------  */
@@ -169,7 +175,8 @@ main div {
 
 aside {
   width: 25%;
-  top: 11.8em;
+  top: 13.5em;
+  left: 0em;
   text-align: left;
   background: rgb(89,79,79);
 }
@@ -217,7 +224,7 @@ aside h3 {
   font-size: 1.5em;
 }
 
-/* Mise en page slide show de main section----------------------------------------------- */
+/* Mise en page de main div----------------------------------------------- */
 /* ------------------------------------------------------------------ */
 
 
@@ -226,7 +233,6 @@ aside h3 {
 
 
 #scontent li {
-  list-style: none;
   display: inline;
 }
 
@@ -270,6 +276,32 @@ aside h3 {
   transform: scale(1.1);
   transition: 1s;
 }
+
+/* Mise en page Qui sommes nous --------------------------------------*/
+/* ------------------------------------------------------------------ */
+
+#qui section {
+  height: 25.5em;
+  padding: 1em 3em;
+  text-align: justify;
+}
+
+#qui iframe {
+  border: 0.5em solid rgb(99, 247, 255);
+  width: 14em;
+  height: 100%;
+}
+
+#qui ul {
+  vertical-align: top;
+  padding: 1em 1em;
+}
+
+#qui li {
+  padding: 0.5em 0em;
+}
+
+
 
 /* Mise en page footer----------------------------------------------- */
 /* ------------------------------------------------------------------ */
