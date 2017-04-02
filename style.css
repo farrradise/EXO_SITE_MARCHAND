@@ -246,6 +246,10 @@ main div h2 {
   text-align: left;
 }
 
+#contact, #produits {
+  overflow-y: hidden;
+}
+
 /* Mise en page slideshow -------------------------------------------*/
 /* ------------------------------------------------------------------ */
 
@@ -302,8 +306,7 @@ main div h2 {
 
 #qui iframe {
   border: 0.2em solid rgb(99, 247, 255);
-  width: 14em;
-  height: 100%;
+  width: 16em;
   box-shadow: 1px 1px 1px rgb(89,79,79);
 }
 
@@ -323,9 +326,6 @@ main div h2 {
 /* Mise en page contactez-nous----------------------------------------------- */
 /* ------------------------------------------------------------------ */
 
-#contact {
-  overflow-y: hidden;
-}
 
 #contact input {
   margin: 2px 0px;
@@ -351,10 +351,6 @@ main div h2 {
 /* Mise en page produits----------------------------------------------- */
 /* ------------------------------------------------------------------ */
 
-#produits {
-  overflow-y: hidden;
-}
-
 #produits section > div, #produits section > img {
   width: 47%;
 }
@@ -373,8 +369,8 @@ main div h2 {
   padding-top: 1em;
 }
 
-#produits > article > h2:first-child, #produits p:first-of-type {
-  padding: 2em 0 0 0;
+#produits > article > ul {
+  padding: 2em 0 5em 0;
 }
 
 #produits section p:last-child {
