@@ -15,7 +15,6 @@ body {
   text-align: center;
   /*  border : 1px solid black;*/
   color: rgb(89,79,79);
-/*  position: relative;*/
 }
 
 a {
@@ -41,14 +40,28 @@ header, nav, #placement {
 } /* ce bidouillage c'est pour ne voit pas la main section en haut (marge) lors du défilement*/
 
 
-h1, header section, main aside, main div, #qui iframe,
+h1, header section, nav li, main aside, main div, #qui iframe,
 #qui ul, #contact label, #contact input, #contact textarea,
-#produits section > div, #produits section > img, #galerie > div {
+#produits section > div, #produits section > img, #galerie > div,
+footer section a {
   display: inline-block;
+}
+
+main aside, main > div, #slideshow, #scontent, #contact button {
+  position: absolute;
 }
 
 #scontent li, #qui li {
   list-style: none;
+}
+
+main aside, main > div, aside, main > div h2,#galerie > div:last-of-type {
+  text-align: left;
+}
+
+nav li, aside article, #produits li {
+  text-align: center;
+
 }
 
 i {
@@ -64,7 +77,6 @@ header {
   height: 8em;
   margin: 2em auto 0em auto;
   border-bottom: 0.5em solid rgb(99, 247, 255);
-  margin : white;
 }
 
 h1 {
@@ -125,10 +137,8 @@ nav ul {
 
 nav li {
   margin: 0px;
-  display: inline-block;
   width: 24.2%;
   height: 2.5em;
-  text-align: center;
 }
 
 nav a {
@@ -148,26 +158,18 @@ nav li:hover {
   transform: scale(1);
 }
 
-
 /* Mise en page Main ------------------------------------------*/
 /* -------------------------------------------------------- */
-
-
-/* pour comprendre le positionnement bizarre
-aside article, main, main aside, main section, aside p, main div {  border: 1px solid black;}*/
-
 
 main {
   position: relative;
   padding: 0px;
   height: 41em;
-  margin: auto auto 0px auto;
+  /*margin: auto auto 0px auto;*/
 }
 
 main aside, main > div {
-  position: absolute;
   z-index: 1;
-  text-align: left;
   height: 27.5em;
 }
 
@@ -185,13 +187,11 @@ aside {
   width: 25%;
   top: 13.5em;
   left: 0em;
-  text-align: left;
   background: rgb(89,79,79);
 }
 
 aside article {
   vertical-align: middle;
-  text-align: center;
   width: 100%;
   height: 13em;
   padding-bottom: 0.5em;
@@ -220,7 +220,6 @@ aside p {
   margin: 0.3em auto auto auto;
   font-size: 0.9em;
   width: 13.5em;
-  text-align: justify;
   font-weight: normal;
 }
 
@@ -241,13 +240,12 @@ main div section, main div > article {
   text-align: justify;
 }
 
-main div h2 {
+main > div h2 {
   text-shadow: 2px 2px 1px rgb(99, 247, 255);
-  text-align: left;
 }
 
 #contact, #produits {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 /* Mise en page slideshow -------------------------------------------*/
@@ -259,7 +257,6 @@ main div h2 {
 }
 
 #slideshow {
-	position: absolute;
 	width: 510px;
 	height: 350px;
 	margin:  auto;
@@ -269,7 +266,6 @@ main div h2 {
 }
 
 #scontent {
-	position: absolute;
 	left: 0px;
 	width: 2000px;
 	margin: 0;
@@ -343,7 +339,6 @@ main div h2 {
 }
 
 #contact button {
-  position: absolute;
   top: 26.5em;
   right : 26em;
 }
@@ -386,7 +381,6 @@ main div h2 {
 }
 
 #produits li {
-  text-align: center;
   list-style: none;
   padding: 1.35em 0;
 }
@@ -396,7 +390,6 @@ main div h2 {
 
 #galerie > div:last-of-type {
   width: 15em;
-  text-align: left;
   vertical-align: top;
   margin-top: 2em;
 }
@@ -424,6 +417,11 @@ main div h2 {
   width: 23em;
   height: auto;
 }
+
+main > div > h2 {
+  margin-left: 2em;
+}
+
 /* Mise en page footer----------------------------------------------- */
 /* ------------------------------------------------------------------ */
 
@@ -438,5 +436,4 @@ footer section a {
   color: white;
   font-weight: normal;
   width: 30%;
-  display: inline-block;
 }
