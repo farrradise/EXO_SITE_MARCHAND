@@ -43,7 +43,7 @@ header, nav, #placement {
 
 h1, header section, main aside, main div, #qui iframe,
 #qui ul, #contact label, #contact input, #contact textarea,
-#produits section > div, #produits section > img {
+#produits section > div, #produits section > img, #galerie > div {
   display: inline-block;
 }
 
@@ -391,6 +391,39 @@ main div h2 {
   padding: 1.35em 0;
 }
 
+/* Mise en page galerie----------------------------------------------- */
+/* ------------------------------------------------------------------ */
+
+#galerie > div:last-of-type {
+  width: 15em;
+  text-align: left;
+  vertical-align: top;
+  margin-top: 2em;
+}
+
+#galerie > div a img {
+  padding: 1em 1em;
+  margin: 0;
+  width: 5em;
+  height: auto;
+}
+
+#galerie > div a img:hover {
+  box-shadow: 1px 1px 2px rgb(89,79,79);
+}
+
+#galerie > div:first-of-type {
+  width: 34em;
+  height: 23em;
+  overflow: hidden;
+}
+
+#galerie > div > img {
+  padding: 4em 2em;
+  margin: 0;
+  width: 23em;
+  height: auto;
+}
 /* Mise en page footer----------------------------------------------- */
 /* ------------------------------------------------------------------ */
 
