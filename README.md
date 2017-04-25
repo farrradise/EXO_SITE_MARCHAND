@@ -1,7 +1,7 @@
 Exercice Site Marchand 
 ======================
 
-Reproduction page d'accueil Google
+Création d'un site marchand fictif
 ----------------------------------
 
 L'exercice consiste à produire un site marchand fictif de vente de produits informatiques.
